@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto 1: Portafolio HTML + CSS - ejemplo de portafolio sobre BMW">
+    <meta name="author" content="Tu Nombre">
+    <meta name="keywords" content="portafolio, html, css, BMW, proyectos">
+    <title>Proyecto 1 - Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="robots" content="noindex">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>TU GARAJE BMW</h1>
+            </div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mí</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h2>BIENVENIDO A TU BMW</h2>
+                <a class="btn-principal" href="#portafolio">Ver proyectos</a>
+            </div>
+        </section>
+
+        <section id="sobremi" class="about container">
+            <h2>Sobre mí</h2>
+            <p>Soy estudiante del curso de desarrollo web. Este proyecto es una demostración de maquetación con HTML y
+                CSS, usando semántica, accesibilidad y diseño responsive.</p>
+        </section>
+
+        <section id="portafolio" class="portfolio container">
+            <h2>Portafolio</h2>
+            <div class="grid">
+                <article class="card">
+                    <img src="img/gs1300.PNG" alt="BMW R 1300 GS" class="card-img">
+                    <h3>BMW R 1300 GS</h3>
+                    <p>Ficha técnica y comparativa de modelos GS.</p>
+                </article>
+
+                <article class="card">
+                    <img src="img/S1000RR.PNG" alt="BMW S 1000 RR" class="card-img">
+                    <h3>BMW S 1000 RR</h3>
+                    <p>Análisis aerodinámico y diseño.</p>
+                </article>
+
+                <article class="card">
+                    <img src="img/K1600.PNG" alt="BMW K 1600" class="card-img">
+                    <h3>BMW K 1600</h3>
+                    <p>Proyecto de UX para touring de larga distancia.</p>
+                </article>
+
+                <article class="card">
+                    <img src="img/G310GS.PNG" alt="BMW G 310 GS" class="card-img">
+                    <h3>BMW G 310 GS</h3>
+                    <p>Optimización para uso urbano.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact container">
+            <h2>Contacto</h2>
+            <form class="contact-form" action="#" method="post" aria-label="Formulario de contacto">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 Proyecto BMW – Página no oficial.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
